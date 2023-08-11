@@ -1,20 +1,11 @@
-# The Minimal Light Theme
+### Personal website
 
-### Using Locally with Jekyll
+To serve locally:
 
-*You need to install [Ruby](https://www.ruby-lang.org/en/) and [Jekyll](https://jekyllrb.com/) fisrt.*
-
-Clone this repository:
-
-```bash
-git clone https://github.com/yaoyao-liu/minimal-light.git
-cd minimal-light
 ```
-Install and run:
+brew install ruby
+sudo gem install bundler
 
-```bash
-bundle install
-bundle exec jekyll server
+sudo bundle install
+bundle exec jekyll serve
 ```
-View the live page using `localhost`:
-<http://localhost:4000>. You can get the html files in `_site` folder.
