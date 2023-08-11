@@ -1,0 +1,68 @@
+---
+layout: standard
+title: Bogdan Ivanyuk-Skulskyi - Reviews
+---
+
+<div>
+    <h1><span style="font-size: 0.85em; font-weight: bold;">Paper review: A Closer Look at Accuracy vs. Robustness</span></h1>
+    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Date</span>: 2021-08-02</p>
+    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Tags</span>: adversarial robustness, robust classifier, Lipschitz continuity, dropout</p>
+
+    <p>Modern methods for training robust neural networks lead to a deterioration in the accuracy of test data. 
+        Therefore, past research has assumed that a trade-off between reliability and accuracy may be inevitable.</p>
+
+    <p>This paper shows that most datasets are <i>r</i>-separable - examples from different classes are at least <i>2r</i> 
+        apart in pixel space. This <i>r</i>-division is valid for <i>r</i> values that exceed the radius of the matrix 
+        perturbations <i>&epsilon;</i>. Therefore, there is a classifier that is both accurate and robust to matrix perturbations 
+        in the size of <i>r</i>.</p>
+    <br />
+    <p align="center">
+        <img src="/assets/reviews/A_closer_look_at_accuracy_vs_robustness/table1.png" alt="drawing" width="400"/>
+    </p>
+
+    <br /><br />
+    <h2>R-separability of datasets</h2>
+    <p>The article covers the MNIST, CIFAR-10, SVHN, and Restricted ImageNet datasets. All of them have separability greater 
+        than <i>2&epsilon;</i>. Table 1 shows statistics of the distances between samples from the training data and their 
+        nearest neighbors from other classes in the <i>L<sub>inf</sub></i> norm. Figure 2 shows histograms of the separability of the train and test data.</p>
+
+    <p><img src="/assets/reviews/A_closer_look_at_accuracy_vs_robustness/figure2.png" alt=""/></p>
+
+    <br /><br />
+    <h2>Accuracy and stability to matrix perturbations for r-separable data</h2>
+    <p>It is theoretically proven that with <i>r</i>-separability of data, there exists a classifier based on a locally 
+        Lipschitz function, which has a robust accuracy 1 with radius <i>r</i>.</p>
+
+    <p><img src="/assets/reviews/A_closer_look_at_accuracy_vs_robustness/lemma41.png" alt=""/></p>
+    <p><img src="/assets/reviews/A_closer_look_at_accuracy_vs_robustness/theorem42.png" alt=""/></p>
+    <p><img src="/assets/reviews/A_closer_look_at_accuracy_vs_robustness/lemma43.png" alt=""/></p>
+
+    <br /><br />
+    <h2>Existing methods of training models</h2>
+    <p><img align="right" src="/assets/reviews/A_closer_look_at_accuracy_vs_robustness/figure4.png" alt="drawing" width="350" style="margin-left:5px;margin-right:5px"/></p>
+    <p>The experimental part of the article compares different training methods (gradient regularization, competitive training, 
+        TRADES, Robust Self Training, and others) that are attacked by <a href="https://arxiv.org/pdf/1611.01236.pdf">projected gradient descent</a> 
+        and <a href="https://arxiv.org/pdf/1910.09338.pdf">multipurpose attack</a>. Tables 2 and 3 show basic statistics.</p>
+
+    <p>The tables show that the methods of competitive training (AT), stable self-learning (RST), and TRADES are more stable than others.
+         Local Lipschitzness is most correlated with adversarial accuracy. More reliable methods assume a higher degree of local Lipschitzness, 
+         but there are cases when the accuracy on test data decreases, although the value of local Lipschitzness continues to decrease.</p>
+
+    <p><img src="/assets/reviews/A_closer_look_at_accuracy_vs_robustness/table2.png" alt=""/></p>
+    <p><img src="/assets/reviews/A_closer_look_at_accuracy_vs_robustness/table3.png" alt=""/></p>
+
+    <p>It is worth noting that the methods that train locally Lipschitz classifiers have generalization gaps: a large difference 
+        in accuracy on training and test data, and even more for training and attack-prone test data.
+    The authors managed to reduce the difference in accuracy by adding a dropout. This combination of dropout and stable training 
+    methods improves conventional accuracy, adversarial accuracy, and local Lipschitzness.</p>
+
+    <p><img src="/assets/reviews/A_closer_look_at_accuracy_vs_robustness/table4.png" alt=""/></p>
+        
+    <hr>
+    <br />
+    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Paper</span>: 
+        <a href="https://arxiv.org/pdf/2003.02460.pdf">https://arxiv.org/pdf/2003.02460.pdf</a></p>
+    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Code</span>: 
+        <a href="https://github.com/yangarbiter/robust-local-lipschitz">https://github.com/yangarbiter/robust-local-lipschitz</a></p>
+
+   </div>
