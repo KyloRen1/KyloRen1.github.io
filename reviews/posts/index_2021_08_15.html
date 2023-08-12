@@ -16,8 +16,9 @@ title: Bogdan Ivanyuk-Skulskyi - Reviews
 
     <h2>Adversarial Training</h2>
     <p>A form of data augmentation, in which a dataset of adversarial samples is first collected 
-        (samples whose distance from real images does not go beyond the specified value <em>𝜀</em> in <em>𝑙𝑝</em> norm), 
-        and then the model is trained on a combination of original and adversarial data as in the formula below:</p>
+        (samples whose distance from real images does not go beyond the specified value <em>&epsilon;</em> in 
+        <em>L<sub>p</sub></em> norm), and then the model is trained on a combination of original and adversarial 
+        data as in the formula below:</p>
     <p><img src="/assets/reviews/Do_wider_neural_networks_really_help_adversarial_robustness/adversarial_training.png" alt=""/></p>
     
     <br /><br />
@@ -26,7 +27,8 @@ title: Bogdan Ivanyuk-Skulskyi - Reviews
     <p><strong>Robust accuracy</strong> is the main metric for assessing network stability, which measures the ratio of correctly classified samples after an attack.<br />
     <strong>Natural accuracy</strong> - the usual accuracy on samples before the attack.<br />
     <strong>Perturbation stability</strong> is a new metric that measures the percentage of samples whose labels do not change after an attack.</p>
-    <p>As can be seen in the graph (Figure 3), the metric of resilience to changes decreases monotonically with increasing model width. This suggests that broader models are actually more vulnerable to matrix changes.</p>
+    <p>As can be seen in the graph (Figure 3), the metric of resilience to changes decreases monotonically with increasing 
+        model width. This suggests that broader models are actually more vulnerable to matrix changes.</p>
     <br />
     <p><img src="/assets/reviews/Do_wider_neural_networks_really_help_adversarial_robustness/metric_plots.png" alt="drawing" width="2000"/></p>
     
