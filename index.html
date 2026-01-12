@@ -2,7 +2,7 @@
 layout: standard
 title: Bogdan Ivanyuk-Skulskyi
 ---
-<div>
+<div class="intro-section">
   <h1 class="title">Hi there, I'm Bogdan</h1>
 
   <img class="photo" src="/assets/profile.png" alt="Bogdan photo" />
@@ -39,89 +39,101 @@ title: Bogdan Ivanyuk-Skulskyi
       As a person, just a nice guy. I like dogs (proud owner of a Beagle, Dachshund, and Toy Terrier), building miniature models, and assembling drones (FPV, ground drones).
       My research and machine learning interests primarily include video processing, reinforcement learning, and robotics.
     </p>
+  </div>
+</div>
 
-    <br>
-    <h3 class="title">Publications</h3>
+<div class="publications-section">
+  <h2 class="section-title">Publications</h2>
     
-    <div class="publications-container">
+  <div class="publications-container">
       <!-- 2024 Publications -->
       <div class="pub-card">
-        <span class="pub-year">2024</span>
-        <h4 class="pub-title">Sequential Image Classification of Human-Robot Walking Environments using Temporal Neural Networks</h4>
-        <p class="pub-venue">IEEE BioRob 2024</p>
-        <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, A G Kurbis, A Mihailidis, B Laschowski</p>
-        <p class="pub-description">State-of-the-art state estimation model on StairNet dataset of the walking environment in robotic prosthetic legs and exoskeletons, focusing on dynamic human-robot walking dynamics rather than static image classification.</p>
-        <div class="pub-links">
-          <span class="pub-link disabled">Paper (Coming Soon)</span>
-          <span class="pub-link-divider">•</span>
-          <a href="https://github.com/KyloRen1/Sequence-Classification-of-Human-Robot-Walking" class="pub-link">Code</a>
+        <div class="pub-image-container">
+          <img src="/assets/papers/biorod_2024.png" alt="BioRob 2024" />
         </div>
-        <div class="pub-image">
-          <img src="assets/papers/biorod_2024.png" alt="BioRob 2024" />
-        </div>
-      </div>
-
-      <div class="pub-card">
-        <span class="pub-year">2024</span>
-        <h4 class="pub-title">Towards Lightweight Transformer Architecture: an Analysis on Semantic Segmentation</h4>
-        <p class="pub-venue">ACDSA 2024 — Oral Presentation</p>
-        <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, N Shvai, A Llanza, A Nakib</p>
-        <p class="pub-description">Examining modifications to the Transformer model for semantic segmentation, two approaches were explored: skip-attention and pool-unpool attention. Skip-attention improved inference speed by +26.7% for ADE20k and +101.7% for Cityscapes, while pool-unpool attention showed gains of +14.8% for ADE20k and +73.3% for Cityscapes.</p>
-        <div class="pub-links">
-          <a href="https://ieeexplore.ieee.org/document/10467926" class="pub-link">Paper</a>
-        </div>
-        <div class="pub-image">
-          <img src="assets/papers/Ivanyuk-Skulsky_ACDSA2024.png" alt="ACDSA 2024" />
+        <div class="pub-content">
+          <span class="pub-year">2024</span>
+          <h4 class="pub-title">Sequential Image Classification of Human-Robot Walking Environments using Temporal Neural Networks</h4>
+          <p class="pub-venue">IEEE BioRob 2024</p>
+          <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, A G Kurbis, A Mihailidis, B Laschowski</p>
+          <p class="pub-description">State-of-the-art state estimation model on StairNet dataset for walking environment recognition in robotic prosthetic legs and exoskeletons.</p>
+          <div class="pub-links">
+            <span class="pub-link disabled">Paper Coming Soon</span>
+            <span class="pub-link-divider">•</span>
+            <a href="https://github.com/KyloRen1/Sequence-Classification-of-Human-Robot-Walking" class="pub-link">Code</a>
+          </div>
         </div>
       </div>
 
       <div class="pub-card">
-        <span class="pub-year">2024</span>
-        <h4 class="pub-title">StairNet: Visual recognition of stairs for human-robot locomotion</h4>
-        <p class="pub-venue">BioMedical Engineering OnLine</p>
-        <p class="pub-authors">A G Kurbis, D Kuzmenko, <u>B Ivaniuk-Skulskyi</u>, A Mihailidis, B Laschowski</p>
-        <p class="pub-description">Comparison of state estimation models of the walking environment in robotic prosthetic legs and exoskeletons.</p>
-        <div class="pub-links">
-          <a href="https://link.springer.com/article/10.1186/s12938-024-01216-0" class="pub-link">Paper</a>
+        <div class="pub-image-container">
+          <img src="/assets/papers/Ivanyuk-Skulsky_ACDSA2024.png" alt="ACDSA 2024" />
         </div>
-        <div class="pub-image">
-          <img src="assets/papers/biomed_eng.png" alt="BioMed Eng" />
-        </div>
-      </div>
-
-      <div class="pub-card">
-        <span class="pub-year">2023</span>
-        <h4 class="pub-title">Sequential Image Classification of Human-Robot Walking Environments using Temporal Neural Networks</h4>
-        <p class="pub-venue">IEEE ICRA 2023 — Computer Vision for Wearable Robotics Workshop</p>
-        <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, A G Kurbis, A Mihailidis, B Laschowski</p>
-        <p class="pub-description">State estimation model of the walking environment in robotic prosthetic legs and exoskeletons, focusing on dynamic human-robot walking dynamics rather than static image classification.</p>
-        <div class="pub-links">
-          <a href="assets/papers/Ivanyuk-Skulsky_ICRA2023.pdf" class="pub-link">Abstract</a>
-          <span class="pub-link-divider">•</span>
-          <a href="https://www.biorxiv.org/content/10.1101/2023.11.10.566555v1" class="pub-link">Pre-print</a>
-          <span class="pub-link-divider">•</span>
-          <a href="assets/papers/Ivanyuk-Skulsky_ICAIR2023.pdf" class="pub-link">Poster</a>
-          <span class="pub-link-divider">•</span>
-          <a href="https://github.com/KyloRen1/Sequence-Classification-of-Human-Robot-Walking" class="pub-link">Code</a>
-        </div>
-        <div class="pub-image">
-          <img src="assets/papers/Ivanyuk-Skulsky_ICAIR2023.png" alt="ICRA 2023" />
+        <div class="pub-content">
+          <span class="pub-year">2024</span>
+          <h4 class="pub-title">Towards Lightweight Transformer Architecture: an Analysis on Semantic Segmentation</h4>
+          <p class="pub-venue">ACDSA 2024 — Oral Presentation</p>
+          <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, N Shvai, A Llanza, A Nakib</p>
+          <p class="pub-description">Novel skip-attention and pool-unpool mechanisms improved transformer inference speed by up to 101.7% on Cityscapes while maintaining segmentation quality.</p>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/document/10467926" class="pub-link">Paper</a>
+          </div>
         </div>
       </div>
 
       <div class="pub-card">
-        <span class="pub-year">2020</span>
-        <h4 class="pub-title">Geometric Properties of Adversarial Images</h4>
-        <p class="pub-venue">IEEE DSMP 2020</p>
-        <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, G Kriukova, A Dmytryshyn</p>
-        <p class="pub-description">Linear algebra-based approach to detect adversarial images, addressing the challenge of identifying slight modifications that mislead machine learning models' predictions, and supporting the method with theoretical explanation and numerical experiments.</p>
-        <div class="pub-links">
-          <a href="https://ieeexplore.ieee.org/document/9204251" class="pub-link">Paper</a>
-          <span class="pub-link-divider">•</span>
-          <a href="https://github.com/KyloRen1/Geometric-properties-of-adversarial-images" class="pub-link">Code</a>
+        <div class="pub-image-container">
+          <img src="/assets/papers/biomed_eng.png" alt="BioMed Eng" />
         </div>
-        <div class="pub-image">
+        <div class="pub-content">
+          <span class="pub-year">2024</span>
+          <h4 class="pub-title">StairNet: Visual recognition of stairs for human-robot locomotion</h4>
+          <p class="pub-venue">BioMedical Engineering OnLine</p>
+          <p class="pub-authors">A G Kurbis, D Kuzmenko, <u>B Ivaniuk-Skulskyi</u>, A Mihailidis, B Laschowski</p>
+          <p class="pub-description">Comprehensive comparison of state estimation models for walking environment recognition in robotic prosthetics and exoskeletons.</p>
+          <div class="pub-links">
+            <a href="https://link.springer.com/article/10.1186/s12938-024-01216-0" class="pub-link">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-image-container">
+          <img src="/assets/papers/Ivaniuk-Skulsky_ICAIR2023.png" alt="ICRA 2023" />
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2023</span>
+          <h4 class="pub-title">Sequential Image Classification of Human-Robot Walking Environments using Temporal Neural Networks</h4>
+          <p class="pub-venue">IEEE ICRA 2023 — Computer Vision for Wearable Robotics Workshop</p>
+          <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, A G Kurbis, A Mihailidis, B Laschowski</p>
+          <p class="pub-description">Temporal neural network approach for dynamic walking environment state estimation in robotic prosthetics.</p>
+          <div class="pub-links">
+            <a href="assets/papers/Ivanyuk-Skulsky_ICRA2023.pdf" class="pub-link">Abstract</a>
+            <span class="pub-link-divider">•</span>
+            <a href="https://www.biorxiv.org/content/10.1101/2023.11.10.566555v1" class="pub-link">Pre-print</a>
+            <span class="pub-link-divider">•</span>
+            <a href="assets/papers/Ivanyuk-Skulsky_ICAIR2023.pdf" class="pub-link">Poster</a>
+            <span class="pub-link-divider">•</span>
+            <a href="https://github.com/KyloRen1/Sequence-Classification-of-Human-Robot-Walking" class="pub-link">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-image-container">
           <img src="/assets/papers/generated_images.png" alt="DSMP 2020" />
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2020</span>
+          <h4 class="pub-title">Geometric Properties of Adversarial Images</h4>
+          <p class="pub-venue">IEEE DSMP 2020</p>
+          <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, G Kriukova, A Dmytryshyn</p>
+          <p class="pub-description">Linear algebra-based detection method for adversarial perturbations in images with theoretical foundations and experimental validation.</p>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/document/9204251" class="pub-link">Paper</a>
+            <span class="pub-link-divider">•</span>
+            <a href="https://github.com/KyloRen1/Geometric-properties-of-adversarial-images" class="pub-link">Code</a>
+          </div>
         </div>
       </div>
     </div>
@@ -183,6 +195,7 @@ title: Bogdan Ivanyuk-Skulskyi
     </ul>
 
     <br />
-    <p>Let's <a href="mailto:ivanyuk.bogdan1999@gmail.com">get in touch!</a>
+    <p>Let's <a href=\"mailto:ivanyuk.bogdan1999@gmail.com\">get in touch!</a></p>
   </div>
+</div>
 </div>
