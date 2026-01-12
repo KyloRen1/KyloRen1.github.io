@@ -127,11 +127,19 @@ body {
 
 .site-header {
   position: relative;
+  top: 0;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  background-color: rgba(251, 251, 253, 0.4);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  min-height: 52px;
+  
+  .wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .site-footer {
@@ -153,26 +161,31 @@ body {
 
 .site-nav {
   float: left;
+  line-height: 52px;
 
   .page-link {
-    color: #424245;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: -0.1px;
-    transition: color 0.2s ease;
+    color: #1d1d1f;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 6px;
+    opacity: 0.8;
     
     &:hover {
-      color: #1d1d1f;
+      opacity: 1;
     }
   }
 
   a {
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
-    color: #424245;
+    color: #1d1d1f;
+    opacity: 0.8;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover {
-      color: #1d1d1f;
+      opacity: 1;
     }
   }
 }
