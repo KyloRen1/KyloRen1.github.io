@@ -392,6 +392,157 @@ body {
   }
 }
 
+// Projects Section - Minimal Apple-style refinements
+.projects-section {
+  margin-top: 80px;
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  
+  li {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    h3 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin: 0 0 12px 0;
+      letter-spacing: -0.3px;
+    }
+    
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #6e6e73;
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+.project-image {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 16px;
+  margin: 20px 0;
+  max-width: 600px;
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.project-link {
+  color: #0071e3;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.2s ease;
+  display: inline-block;
+  margin-top: 10px;
+  
+  &:hover {
+    color: #0077ed;
+  }
+}
+
+.project-link-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  align-items: center;
+  
+  a {
+    color: #0071e3;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: #0077ed;
+    }
+    
+    &:not(:last-child)::after {
+      content: '•';
+      color: #d2d2d7;
+      margin-left: 8px;
+      font-size: 10px;
+    }
+  }
+}
+
+.contact-section {
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: center;
+  
+  p {
+    font-size: 20px;
+    color: #1d1d1f;
+    font-weight: 500;
+    
+    a {
+      color: #0071e3;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+      
+      &:hover {
+        color: #0077ed;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@include media-query($on-palm) {
+  .projects-section {
+    margin-top: 60px;
+  }
+  
+  .projects-list li {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .project-images-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-link-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact-section {
+    margin-top: 60px;
+    padding-top: 40px;
+  }
+}
+
 @include media-query($on-palm) {
   .content-col {
     float: left;
