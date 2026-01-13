@@ -166,7 +166,7 @@ body {
   .page-link {
     color: #1d1d1f;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -0.01em;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0 6px;
@@ -178,7 +178,7 @@ body {
   }
 
   a {
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     color: #1d1d1f;
     opacity: 0.8;
@@ -636,6 +636,242 @@ body {
   
   .review-link {
     font-size: 16px;
+  }
+}
+
+// Individual Review Post Styles
+.review-post {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.review-post-header {
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.review-post-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+}
+
+.review-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.review-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #6e6e73;
+  
+  .meta-label {
+    font-weight: 600;
+    color: #86868b;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.review-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.review-tag {
+  display: inline-block;
+  font-size: 12px;
+  color: #86868b;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.review-content {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #1d1d1f;
+  
+  p {
+    margin-bottom: 24px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #1d1d1f;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+  
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: #1d1d1f;
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
+  
+  ul, ol {
+    margin-bottom: 24px;
+    padding-left: 28px;
+    
+    li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+  }
+  
+  a {
+    color: #0071e3;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: #0077ed;
+      text-decoration: underline;
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    margin: 28px 0;
+    display: block;
+    
+    &[align="center"], &[align="middle"] {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    &[align="right"] {
+      float: right;
+      margin-left: 24px;
+      margin-right: 0;
+    }
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin: 48px 0;
+  }
+}
+
+.review-footer {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 2px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.review-footer-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #86868b;
+  margin-bottom: 16px;
+}
+
+.review-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  .review-link-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    
+    .link-label {
+      font-weight: 600;
+      color: #1d1d1f;
+      min-width: 60px;
+    }
+    
+    a {
+      color: #0071e3;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      word-break: break-all;
+      
+      &:hover {
+        color: #0077ed;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.back-to-reviews {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #0071e3;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 32px;
+  transition: color 0.2s ease;
+  
+  &:before {
+    content: '←';
+    font-size: 18px;
+  }
+  
+  &:hover {
+    color: #0077ed;
+  }
+}
+
+@include media-query($on-palm) {
+  .review-post-title {
+    font-size: 32px;
+  }
+  
+  .review-content {
+    font-size: 15px;
+    
+    h2 {
+      font-size: 24px;
+      margin-top: 36px;
+    }
+    
+    h3 {
+      font-size: 20px;
+      margin-top: 28px;
+    }
+    
+    img[align="right"] {
+      float: none;
+      margin-left: 0;
+    }
+  }
+  
+  .review-footer {
+    padding: 24px;
   }
 }
 

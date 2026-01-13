@@ -3,15 +3,27 @@ layout: standard
 title: Bogdan Ivanyuk-Skulskyi - Reviews
 ---
 
-<div>
-    <h1><span style="font-size: 0.85em; font-weight: bold;">Paper review: MOSAIC: Mobile Segmentation via decoding Aggregated Information and encoded Context</span></h1>
-    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Date</span>: 2022-02-05</p>
-    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Tags</span>: segmentation, mobile, neural network</p>
-
-    <p>Asymmetric encoder-decoder architecture with multiple lateral connections and spatial pyramid pooling module on top of a backbone.</p>
-    <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center"> 
-        <p><img src="/assets/reviews/mosaic/mosaic.png" alt="" style="max-width: 90%; height: auto;"/></p>
+<div class="review-post">
+  <a href="/reviews" class="back-to-reviews">Back to Reviews</a>
+  
+  <header class="review-post-header">
+    <h1 class="review-post-title">MOSAIC: Mobile Segmentation via Decoding Aggregated Information and Encoded Context</h1>
+    <div class="review-meta">
+      <div class="review-meta-item">
+        <span class="meta-label">Date</span>
+        <span>February 5, 2022</span>
+      </div>
+      <div class="review-tags">
+        <span class="review-tag">segmentation</span>
+        <span class="review-tag">mobile</span>
+        <span class="review-tag">neural network</span>
+      </div>
     </div>
+  </header>
+
+  <div class="review-content">
+    <p>Asymmetric encoder-decoder architecture with multiple lateral connections and spatial pyramid pooling module on top of a backbone.</p>
+    <p><img src="/assets/reviews/mosaic/mosaic.png" alt="MOSAIC Architecture"/></p>
 
     <h2>Contextual Feature Pyramid</h2>
     <p>A spatial pyramid pooling (SPP) module is employed to collect contextual information from global levels to regional ones. Each bin in the pyramid accumulates regional information, while the global branch generates representations of the whole scene.</p>
@@ -19,16 +31,19 @@ title: Bogdan Ivanyuk-Skulskyi - Reviews
 
     <h2>Hybrid Decoder</h2>
     <p>A few skip connections from early feature layers are added in combination with a lightweight decoder with a hybrid merging style (concatenation merge block and summation merge block).</p>
-    <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center">
-        <p><img src="/assets/reviews/mosaic/decoder.png" alt="" style="max-width: 60%; height: auto;"/></p>
-    </div>
+    <p><img src="/assets/reviews/mosaic/decoder.png" alt="Hybrid Decoder"/></p>
 
     <h2>Experiments</h2>
-    <p><img src="/assets/reviews/mosaic/results.png" alt="" style="max-width: 90%; height: auto;"/></p>
-        
-    <hr>
-    <br />
-    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Paper</span>: 
-        <a href="https://arxiv.org/pdf/2112.11623v1.pdf">https://arxiv.org/pdf/2112.11623v1.pdf</a></p>
+    <p><img src="/assets/reviews/mosaic/results.png" alt="Experimental Results"/></p>
+  </div>
 
-   </div>
+  <div class="review-footer">
+    <h3 class="review-footer-title">Resources</h3>
+    <div class="review-links">
+      <div class="review-link-item">
+        <span class="link-label">Paper:</span>
+        <a href="https://arxiv.org/pdf/2112.11623v1.pdf">https://arxiv.org/pdf/2112.11623v1.pdf</a>
+      </div>
+    </div>
+  </div>
+</div>
