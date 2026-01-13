@@ -3,18 +3,29 @@ layout: standard
 title: Bogdan Ivanyuk-Skulskyi - Reviews
 ---
 
-<div>
-    <h1><span style="font-size: 0.85em; font-weight: bold;">Paper review: BOAT: Bilateral Local Attention Vision Transformer</span></h1>
-    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Date</span>: 2022-02-02</p>
-    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Tags</span>: transformer, neural networks</p>
+<div class="review-post">
+  <a href="/reviews" class="back-to-reviews">Back to Reviews</a>
+  
+  <header class="review-post-header">
+    <h1 class="review-post-title">BOAT: Bilateral Local Attention Vision Transformer</h1>
+    <div class="review-meta">
+      <div class="review-meta-item">
+        <span class="meta-label">Date</span>
+        <span>February 2, 2022</span>
+      </div>
+      <div class="review-tags">
+        <span class="review-tag">transformer</span>
+        <span class="review-tag">neural networks</span>
+      </div>
+    </div>
+  </header>
 
+  <div class="review-content">
     <p>Modification of Vision Transformer that makes use of grouped patches that share similarities in feature space.</p>
     <p><img src="/assets/reviews/boat/boat.png" alt="Modified Vision Transformer"/></p>
 
     <h2>Bilateral Local Attention Block</h2>
-    <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center"> 
-        <p><img src="/assets/reviews/boat/attention.png" alt="" style="max-width: 70%; height: auto;"/></p>
-    </div>
+    <p><img src="/assets/reviews/boat/attention.png" alt="Bilateral Local Attention Block"/></p>
 
     <p>Image-space Local Attention (ISLA), or ISLA for short, computes self-attention among tokens from the same local window. Patches within the same local window are likely to be closely related to each other.</p>
     <p>To make use of information dropped by ISLA, Feature-Space Local Attention (FSLA) is introduced. Token features are grouped using balanced hierarchical clustering, and FSLA computes self-attention among tokens that are close in feature space.</p>
@@ -22,9 +33,16 @@ title: Bogdan Ivanyuk-Skulskyi - Reviews
     <h2>Experiments</h2>
     <p>Slightly increased number of parameters leads to accuracy improvements of SWIN and CSWin models for main computer vision tasks (classification, segmentation, object detection).</p>
     <p>The neural network is composed of 3 hidden layers. The first layer has 32 neurons, while the second layer has 8, the third layer has 4 neurons. Such simple models can be efficiently trained using SGD and they are not so susceptible to overfitting.</p>
-    <p><img src="/assets/reviews/boat/results.png" alt="Experiments"/></p>
-    <hr>
-    <br />
-    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Paper</span>: 
-        <a href="https://arxiv.org/pdf/2201.13027.pdf">https://arxiv.org/pdf/2201.13027.pdf</a></p>
-   </div>
+    <p><img src="/assets/reviews/boat/results.png" alt="Experiments Results"/></p>
+  </div>
+
+  <div class="review-footer">
+    <h3 class="review-footer-title">Resources</h3>
+    <div class="review-links">
+      <div class="review-link-item">
+        <span class="link-label">Paper:</span>
+        <a href="https://arxiv.org/pdf/2201.13027.pdf">https://arxiv.org/pdf/2201.13027.pdf</a>
+      </div>
+    </div>
+  </div>
+</div>

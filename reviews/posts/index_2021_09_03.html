@@ -3,11 +3,24 @@ layout: standard
 title: Bogdan Ivanyuk-Skulskyi - Reviews
 ---
 
-<div>
-    <h1><span style="font-size: 0.85em; font-weight: bold;">Paper review: NN-sort: Neural Network based Data Distribution-aware Sorting</span></h1>
-    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Date</span>: 2021-09-03</p>
-    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Tags</span>: sorting, neural networks</p>
+<div class="review-post">
+  <a href="/reviews" class="back-to-reviews">Back to Reviews</a>
+  
+  <header class="review-post-header">
+    <h1 class="review-post-title">NN-sort: Neural Network based Data Distribution-aware Sorting</h1>
+    <div class="review-meta">
+      <div class="review-meta-item">
+        <span class="meta-label">Date</span>
+        <span>September 3, 2021</span>
+      </div>
+      <div class="review-tags">
+        <span class="review-tag">sorting</span>
+        <span class="review-tag">neural networks</span>
+      </div>
+    </div>
+  </header>
 
+  <div class="review-content">
     <p>The authors propose a new sorting algorithm called "NN-sort", which leverages the neural network model to learn the 
         data distribution and afterward uses it to map disordered data elements into ordered ones. The complexity of the 
         algorithm is <i>O(N log N)</i> in theory, it can run in near-linear time in most of the cases observed.</p>
@@ -19,34 +32,26 @@ title: Bogdan Ivanyuk-Skulskyi - Reviews
         continue until the size of the conflicting array is smaller than a threshold. Then, the conflicting array is sorted 
         by classic sorting algorithms, like Quick Sort. In the end, all the roughly ordered arrays and strictly sorted 
         conflicting arrays are merged.</p>
-    <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center"> 
-        <img src="/assets/reviews/nn_sort/Figure1.png" alt="NN-SORT Design" style="max-width: 80%; height: auto;"/></p>
-    </div>
+    <p><img src="/assets/reviews/nn_sort/Figure1.png" alt="NN-SORT Design"/></p>
 
-    <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center">
-        <img src="/assets/reviews/nn_sort/algorithm1.png" alt="Algorithm 1" width="300"/>
-        <img src="/assets/reviews/nn_sort/algorithm2.png" alt="Algorithm 2" width="300"/>
-      </div>
+    <div style="text-align: center; margin: 28px 0;">
+        <img src="/assets/reviews/nn_sort/algorithm1.png" alt="Algorithm 1" width="300" style="display: inline-block; margin: 0 8px;"/>
+        <img src="/assets/reviews/nn_sort/algorithm2.png" alt="Algorithm 2" width="300" style="display: inline-block; margin: 0 8px;"/>
+    </div>
 
     <h2>NN-model for NN-SORT</h2>
     <p>The neural network is composed of 3 hidden layers. The first layer has 32 neurons, while the second layer has 8, 
         the third layer has 4 neurons. Such simple models can be efficiently trained using SGD and they are not so 
         susceptible to overfitting.</p>
     <p>In order to avoid the impact of outliers, the model is trained using Huber loss:</p>
-    <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center"> 
-        <img src="/assets/reviews/nn_sort/eq1.png" alt="Huber Loss Equation"/></p>
-    </div>
-    <br>
+    <p><img src="/assets/reviews/nn_sort/eq1.png" alt="Huber Loss Equation"/></p>
 
     <h2>Model Analysis</h2>
 
     <h3>Best Case</h3>
     <p>If <i>n > 1</i>, it needs <i>&theta;n</i> operations to sort all the data elements and one pass <i>n</i> operations) 
         to remove any empty positions at the output.</p>
-    
-    <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center">
-        <img align="center" src="/assets/reviews/nn_sort/best_case.png" alt="Best Case" />
-    </div>
+    <p><img align="center" src="/assets/reviews/nn_sort/best_case.png" alt="Best Case Analysis" /></p>
 
     <h3>General Case</h3>
     <p>Where <i>&sigma;</i> - collision rate per iteration, <i>&theta;</i> - the number of operations required for the 
@@ -57,9 +62,7 @@ title: Bogdan Ivanyuk-Skulskyi - Reviews
         <li>Generating several roughly ordered arrays and one ordered conflicting array</li>
         <li>Merging all the roughly ordered arrays</li>
     </ol>
-    <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center">
-        <img align="center" src="/assets/reviews/nn_sort/general_case.png" alt="General Case"/>
-    </div>
+    <p><img align="center" src="/assets/reviews/nn_sort/general_case.png" alt="General Case Analysis"/></p>
 
     <h3>Worst Case</h3>
     <p>The sorting process is then divided into 3 parts:</p>
@@ -68,16 +71,19 @@ title: Bogdan Ivanyuk-Skulskyi - Reviews
         <li>Sorting all the conflicting data points</li>
         <li>Correcting the out-of-order data elements and merging all the sorted arrays</li>
     </ol>
-    <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center">
-        <img align="center" src="/assets/reviews/nn_sort/worst_case.png" alt="Worst Case"/>
-    </div>
+    <p><img align="center" src="/assets/reviews/nn_sort/worst_case.png" alt="Worst Case Analysis"/></p>
 
-    <br>
     <h2>Evaluation</h2>
-    <p><img src="/assets/reviews/nn_sort/figure4.png" alt="Evaluation"/></p>
+    <p><img src="/assets/reviews/nn_sort/figure4.png" alt="Evaluation Results"/></p>
+  </div>
 
-    <hr>
-    <br />
-    <p><span style="background-color: #f2f2f2; padding: 2px 4px; border-radius: 4px; font-weight: bold;">Paper</span>: 
-        <a href="https://arxiv.org/abs/1907.08817">https://arxiv.org/abs/1907.08817</a></p>
-   </div>
+  <div class="review-footer">
+    <h3 class="review-footer-title">Resources</h3>
+    <div class="review-links">
+      <div class="review-link-item">
+        <span class="link-label">Paper:</span>
+        <a href="https://arxiv.org/abs/1907.08817">https://arxiv.org/abs/1907.08817</a>
+      </div>
+    </div>
+  </div>
+</div>

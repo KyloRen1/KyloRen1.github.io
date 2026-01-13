@@ -2,202 +2,193 @@
 layout: standard
 title: Bogdan Ivanyuk-Skulskyi
 ---
-<div>
+
+<nav class="table-of-contents">
+  <ul>
+    <li><a href="#about" class="toc-link active" data-section="about">About</a></li>
+    <li><a href="#publications" class="toc-link" data-section="publications">Publications</a></li>
+    <li><a href="#projects" class="toc-link" data-section="projects">Projects</a></li>
+  </ul>
+</nav>
+
+<div id="about" class="intro-section">
   <h1 class="title">Hi there, I'm Bogdan</h1>
 
   <img class="photo" src="/assets/profile.png" alt="Bogdan photo" />
 
   <div class="content-col">
-    <p>
-      <!-- I am a first-year Ph.D. student at CRIStAL, University of Lille and Cyclope.ai (Vinci Autoroutes),
-      advised by <a href="https://scholar.google.com/citations?user=jfjZfnoAAAAJ&hl">prof. Nadiya Shvai</a>,
-      <a href="https://scholar.google.com/citations?user=iCUYHs4AAAAJ&hl">Amir Nakib</a>, and
-      <a href="https://scholar.google.com/citations?user=hoQmzocAAAAJ&hl">El-ghazali Talbi</a>.
-      Prior to joining CRIStAL,  -->
+    <div class="about-intro">
+      <p class="lead-text">
+        I am a Senior Machine Learning Engineer and <a href="https://www.kaggle.com/bogdanbaraban">Kaggle Expert</a> based in Paris. My work centers on high-scale architecture, bridging the gap between Applied Mathematics and production-grade AI. Currently, I am working on a conversational search agent at Pitchbook Data that supports over 100,000 monthly user interactions.
+      </p>
+    </div>
 
-      As an engineer, I have worked in natural language and voice processing, but lately, my main focus has been on computer vision. I work 
-      on security systems for road infrastructure and autonomous vehicles. 
-      <br> 
-      <br>
-
-      I obtained my Bachelor's degree in 2020 and completed my Master's degree in 2022 at the National 
-      University of Kyiv-Mohyla Academy. Throughout my academic journey, I had the privilege of working 
-      under the guidance of 
-      <a href="https://scholar.google.com/citations?user=DD1d1b4AAAAJ&hl">Prof. Galyna Kriukova</a>,
-      <a href="https://scholar.google.com/citations?user=VZd6me0AAAAJ&hl">Andrii Dmytryshyn</a>, and
-      <a href="https://scholar.google.com/citations?user=jfjZfnoAAAAJ&hl">Nadiya Shvai</a>.
-      <br>
-      <br>
-      During my Master's program, I had an internship at Samsung Research, specifically within the Integent Security Lab, 
-      focusing on voice security applications. Additionally, I did an internship at the University of Toronto, where 
-      I worked under the supervision of 
-      <a href="https://kite-uhn.com/scientist/brokoslaw-laschowski">Dr. Brokoslaw Laschowski</a>, and
-      <a href="https://ot.utoronto.ca/about/core-faculty/alex-mihailidis/">Dr. Alex Mihailidis</a> on video
-      classification model for exoskeleton control.
-      <br>
-      <br>
-      As a person, just a nice guy. I like dogs (proud owner of a Beagle, Dachshund, and Toy Terrier), building miniature models, and assembling drones (FPV, ground drones).
-      My research and machine learning interests primarily include video processing, reinforcement learning, and robotics.
-    </p>
-
-    <br>
-    <h3 class="title">Publications:</h3>
-    <small>
-      <b style="font-size: 120%;">2024:</b>
-      <ul>
-        <li>
-          <b>[Conference Paper] Sequential Image Classification of Human-Robot Walking Environments using Temporal Neural Networks</b>
-          <br>
-          <u>B Ivaniuk-Skulskyi</u>, A G Kurbis, A Mihailidis, B Laschowski
-          <br>
-          <i>In IEEE BioRob 2024</i><br />
-          <a href="">[Paper TODO]</a>
-          <a href="https://github.com/KyloRen1/Sequence-Classification-of-Human-Robot-Walking">[Code]</a><br />
-          State-of-the-art state estimation model on StairNet dataset of the walking environment in robotic prosthetic legs and exoskeletons,
-          focusing on dynamic human-robot walking dynamics rather than static image classification. <br />
-
-          <div style="display:block;margin-top: 15px; margin-bottom: 20px" align="center">
-            <img src="assets/papers/biorod_2024.png" class="images" width="420" />
-          </div>
-        </li>
-      </ul>
-      
-      <ul>
-        <li>
-          <b>[Conference Paper] Towards Lightweight Transformer Architecture: an Analysis on Semantic Segmentation</b>
-          <br>
-          <u>B Ivaniuk-Skulskyi</u>, N Shvai, A Llanza, A Nakib
-          <br>
-          <i>In ACDSA 2024, with oral presentation</i><br />
-          <a href="https://ieeexplore.ieee.org/document/10467926">[paper]</a>
-          <br />
-          Examining modifications to the Transformer model for semantic segmentation, two approaches were explored: skip-attention and pool-unpool attention. 
-          Skip-attention improved inference speed by +26.7% for ADE20k and +101.7% for Cityscapes, while pool-unpool attention showed gains of +14.8% for 
-          ADE20k and +73.3% for Cityscapes.
-          <div style="display:block;margin-top: 15px; margin-bottom: 10px" align="center">
-            <img src="assets/papers/Ivanyuk-Skulsky_ACDSA2024.png" class="images" width="650" />
-          </div>
-          <br />
-        </li>
-      </ul>
-
-      <b style="font-size: 120%;">2023:</b>
-      <ul>
-        <li>
-          <b>[Journal Paper] StairNet: Visual recognition of stairs for human-robot locomotion</b>
-          <br>
-          A G Kurbis, D Kuzmenko, <u>B Ivaniuk-Skulskyi</u>, A Mihailidis, B Laschowski
-          <br>
-          <i>BioMedical Engineering OnLine</i><br />
-          <a href="https://link.springer.com/article/10.1186/s12938-024-01216-0?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240216&utm_content=10.1186/s12938-024-01216-0">[paper]</a>
-          <br />
-          Comparison of state estimation models of the walking environment in robotic prosthetic legs and exoskeletons.
-          
-          <div style="display:block;margin-top: 15px; margin-bottom: 10px" align="center">
-            <img src="assets/papers/biomed_eng.png" class="images" width="420" />
-          </div>
-          <br />
-        </li>
-      </ul>
-      
-      <ul>
-        <li>
-          <b>[Abstract] Sequential Image Classification of Human-Robot Walking Environments using Temporal Neural Networks</b>
-          <br>
-          <u>B Ivaniuk-Skulskyi</u>, A G Kurbis, A Mihailidis, B Laschowski
-          <br>
-          <i><a href="https://projects.iq.harvard.edu/visionwearablerobotics/about">In IEEE ICRA 2023</a>, Computer
-            vision for Wearable Robotics workshop; KITE/UHN ICAIR 2023</i><br />
-          <a href="assets/papers/Ivaniuk-Skulsky_ICAIR2023.pdf">[ICAIR Poster]</a>
-          <a href="assets/papers/Ivanyuk-Skulsky_ICRA2023.pdf">[ICRA Abstract]</a>
-          <a href="https://www.biorxiv.org/content/10.1101/2023.11.10.566555v1">[pre-print]</a>
-          <a href="https://github.com/KyloRen1/Sequence-Classification-of-Human-Robot-Walking">[Code]</a><br />
-          State estimation model of the walking environment in robotic prosthetic legs and exoskeletons,
-          focusing on dynamic human-robot walking dynamics rather than static image classification. <br />
-
-          <div style="display:block;margin-top: 15px; margin-bottom: 20px" align="center">
-            <img src="assets/papers/Ivaniuk-Skulsky_ICAIR2023.png" class="images" width="420" />
-          </div>
-        </li>
-      </ul>
-
-      <b style="font-size: 120%;">2020:</b>
-      <ul>
-        <li>
-          <b>[Conference Paper] Geometric Properties of Adversarial Images</b>
-          <br>
-          <u>B Ivaniuk-Skulskyi</u>, G Kriukova, A Dmytryshyn
-          <br>
-          <i>In IEEE DSMP 2020</i><br />
-          <a href="https://ieeexplore.ieee.org/document/9204251">[Paper]</a>
-          <a href="https://github.com/KyloRen1/Geometric-properties-of-adversarial-images">[Code]</a><br />
-          Linear algebra-based approach to detect adversarial images, addressing the challenge of identifying slight
-          modifications that mislead machine learning models' predictions, and supporting the method with theoretical
-          explanation and numerical experiments.
-
-          <div style="display:block;margin-top: 15px; margin-bottom: 20px" align="center">
-            <img class="images" src="/assets/papers/generated_images.png" width="420" alt="Megaverse gif" />
-          </div>
-        </li>
-      </ul>
-    </small>
-    <br>
-    <br>
-
-
-    <h3 class="title">Selected open-source projects:</h3>
-    <ul>
-      <li>
-        <b>Tower Defence RL agent</b>
-        <a href="https://github.com/KyloRen1/TowerDefenceRLagent">[Code]</a><br>
-        An implementation of a classical Tower Defence game, which allows you to play it on your own, 
-        and it also includes a gym-like environment for training RL agents.
-        <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center">
-          <img class="images" src="/assets/projects/tower_defence.gif" width="350" alt="Surviv.io rl agent" />
-        </div>
-      </li>
-      <li>
-        <b>Raspberry Pi car</b>
-        <a href="https://github.com/KyloRen1/RaspberryPi-car">[Code]</a><br>
-        Building a Raspberry Pi car, from putting it together to testing and adding remote control features.
-        <div style="display:block;margin-top: 15px; margin-bottom: 30px" align="center">
-          <img src="assets/projects/rasp_pi/car.gif" alt="GIF 1" width="30%">
-          <img src="assets/projects/rasp_pi/test.gif" alt="GIF 2" width="53%">
-        </div>
-      </li>
-      <li>
-        <b>UA-datasets</b>
-        <a href="https://fido-ai.github.io/ua-datasets/">[Documentation]</a>
-        <a href="https://github.com/fido-ai/ua-datasets">[Code]</a>
-        <a href="https://huggingface.co/FIdo-AI">[Hugging Face Hub]</a><br>
-        Collection of datasets for the Ukrainian language. These datasets include text classification, 
-        question answering, and token classification tasks. They are neatly organized and provided within 
-        a Python package and also accessible on the Hugging Face Hub for easy use and integration into your NLP projects.
-      </li>
-      <li>
-        <b>Surviv.io game bot</b>
-        <a href="https://github.com/Laggg/ml-bots-surviv.io">[Code]</a> <br>
-        Reinforcement Learning Agent for the Online Multiplayer Battle Royale Game surviv.io.
-        <div style="display:block;margin-top: 15px; margin-bottom: 20px" align="center">
-          <img class="images" src="/assets/projects/surviv.gif" width="500" alt="Surviv.io rl agent" />
-        </div>
-      </li>
-      <li>
-        <b>Quora Insincere Questions Classification (Kaggle)</b>
-        <a href="https://github.com/KyloRen1/Kaggle-Quora-Insincere-Questions-Classification">[Code]</a><br>
-        NLP competition for insincere questions classification (silver medal, top 2% solution).
-      </li>
-      <li>
-        <b>Exploring cross-lingual abilities of Multilingual BERT</b>
-        <a href="https://github.com/KyloRen1/CS224N-NLP-DeepPavlov">[Code]</a><br>
-        I studied M-BERT's transfer learning for classification tasks, moving from English to Russian test sets, 
-        and compared the results to RuBERT. I also explored M-BERT's transfer learning for Boolean Questions, 
-        fine-tuning on English BoolQ and NLI datasets, then validating on a Russian test set and comparing the 
-        outcomes to RuBERT.
-      </li>
-    </ul>
-
-    <br />
-    <p>Let's <a href="mailto:ivanyuk.bogdan1999@gmail.com">get in touch!</a>
+    <div class="about-section">
+      <p style="margin-bottom: 20px;">
+        My professional focus is on building systems that are both mathematically sound and computationally efficient. At Pitchbook, I manage the taxonomy and orchestration for a complex conversational search agent. This role builds on my experience at VINCI (Cyclope.ai), where I engineered real-time computer vision services capable of processing 300 million daily requests with sub-200ms latency.
+      </p>
+      <p style="margin-bottom: 20px;">
+        I hold an MSc in Applied Mathematics from the National University of Kyiv-Mohyla Academy. During my Master's program, I had an internship at Samsung Research, specifically within the Intelligent Security Lab, focusing on voice security applications. Additionally, I did an internship at the University of Toronto, where I worked under the supervision of <a href="https://kite-uhn.com/scientist/brokoslaw-laschowski">Dr. Brokoslaw Laschowski</a> and <a href="https://ot.utoronto.ca/about/core-faculty/alex-mihailidis/">Dr. Alex Mihailidis</a> on video classification models for exoskeleton control, resulting in three publications and state-of-the-art accuracy on the StairNet dataset.
+      </p>
+      <p>
+        Outside of engineering, I am a robotics enthusiast. I spend my free time building FPV drones and miniature models, or walking my Beagle and Dachshund.
+      </p>
+    </div>
   </div>
 </div>
+
+<div id="publications" class="publications-section">
+  <h2 class="section-title">Publications</h2>
+    
+  <div class="publications-container">
+      <!-- 2024 Publications -->
+      <div class="pub-card">
+        <div class="pub-image-container">
+          <img src="/assets/papers/biorod_2024.png" alt="BioRob 2024" />
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2024</span>
+          <h4 class="pub-title">Sequential Image Classification of Human-Robot Walking Environments using Temporal Neural Networks</h4>
+          <p class="pub-venue">IEEE BioRob 2024</p>
+          <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, A G Kurbis, A Mihailidis, B Laschowski</p>
+          <p class="pub-description">State-of-the-art state estimation model on StairNet dataset for walking environment recognition in robotic prosthetic legs and exoskeletons.</p>
+          <div class="pub-links">
+            <span class="pub-link disabled">Paper Coming Soon</span>
+            <span class="pub-link-divider">•</span>
+            <a href="https://github.com/KyloRen1/Sequence-Classification-of-Human-Robot-Walking" class="pub-link">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-image-container">
+          <img src="/assets/papers/Ivanyuk-Skulsky_ACDSA2024.png" alt="ACDSA 2024" />
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2024</span>
+          <h4 class="pub-title">Towards Lightweight Transformer Architecture: an Analysis on Semantic Segmentation</h4>
+          <p class="pub-venue">ACDSA 2024 — Oral Presentation</p>
+          <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, N Shvai, A Llanza, A Nakib</p>
+          <p class="pub-description">Novel skip-attention and pool-unpool mechanisms improved transformer inference speed by up to 101.7% on Cityscapes while maintaining segmentation quality.</p>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/document/10467926" class="pub-link">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-image-container">
+          <img src="/assets/papers/biomed_eng.png" alt="BioMed Eng" />
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2024</span>
+          <h4 class="pub-title">StairNet: Visual recognition of stairs for human-robot locomotion</h4>
+          <p class="pub-venue">BioMedical Engineering OnLine</p>
+          <p class="pub-authors">A G Kurbis, D Kuzmenko, <u>B Ivaniuk-Skulskyi</u>, A Mihailidis, B Laschowski</p>
+          <p class="pub-description">Comprehensive comparison of state estimation models for walking environment recognition in robotic prosthetics and exoskeletons.</p>
+          <div class="pub-links">
+            <a href="https://link.springer.com/article/10.1186/s12938-024-01216-0" class="pub-link">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-image-container">
+          <img src="/assets/papers/Ivaniuk-Skulsky_ICAIR2023.png" alt="ICRA 2023" />
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2023</span>
+          <h4 class="pub-title">Sequential Image Classification of Human-Robot Walking Environments using Temporal Neural Networks</h4>
+          <p class="pub-venue">IEEE ICRA 2023 — Computer Vision for Wearable Robotics Workshop</p>
+          <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, A G Kurbis, A Mihailidis, B Laschowski</p>
+          <p class="pub-description">Temporal neural network approach for dynamic walking environment state estimation in robotic prosthetics.</p>
+          <div class="pub-links">
+            <a href="assets/papers/Ivanyuk-Skulsky_ICRA2023.pdf" class="pub-link">Abstract</a>
+            <span class="pub-link-divider">•</span>
+            <a href="https://www.biorxiv.org/content/10.1101/2023.11.10.566555v1" class="pub-link">Pre-print</a>
+            <span class="pub-link-divider">•</span>
+            <a href="assets/papers/Ivanyuk-Skulsky_ICAIR2023.pdf" class="pub-link">Poster</a>
+            <span class="pub-link-divider">•</span>
+            <a href="https://github.com/KyloRen1/Sequence-Classification-of-Human-Robot-Walking" class="pub-link">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <div class="pub-image-container">
+          <img src="/assets/papers/generated_images.png" alt="DSMP 2020" />
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2020</span>
+          <h4 class="pub-title">Geometric Properties of Adversarial Images</h4>
+          <p class="pub-venue">IEEE DSMP 2020</p>
+          <p class="pub-authors"><u>B Ivaniuk-Skulskyi</u>, G Kriukova, A Dmytryshyn</p>
+          <p class="pub-description">Linear algebra-based detection method for adversarial perturbations in images with theoretical foundations and experimental validation.</p>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/document/9204251" class="pub-link">Paper</a>
+            <span class="pub-link-divider">•</span>
+            <a href="https://github.com/KyloRen1/Geometric-properties-of-adversarial-images" class="pub-link">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div id="projects" class="projects-section">
+  <h2 class="section-title">Selected Projects</h2>
+  
+  <ul class="projects-list">
+    <li>
+      <h3>UA-Datasets</h3>
+      <p>Comprehensive collection of datasets for the Ukrainian language. Available as a Python package and on Hugging Face Hub.</p>
+      <div class="project-link-group">
+        <a href="https://fido-ai.github.io/ua-datasets/">Documentation</a>
+        <a href="https://github.com/fido-ai/ua-datasets">GitHub</a>
+        <a href="https://huggingface.co/FIdo-AI">Hugging Face</a>
+      </div>
+    </li>
+
+    <li>
+      <h3>Tower Defence RL Agent</h3>
+      <p>Implementation of a classical Tower Defence game with a gym-like environment for training reinforcement learning agents.</p>
+      <img class="project-image" src="/assets/projects/tower_defence.gif" alt="Tower Defence RL agent" />
+      <a href="https://github.com/KyloRen1/TowerDefenceRLagent">View on GitHub →</a>
+    </li>
+
+    <li>
+      <h3>Raspberry Pi Car</h3>
+      <p>Building a Raspberry Pi-powered autonomous car from scratch, including hardware assembly and remote control features.</p>
+      <div class="project-images-grid">
+        <img src="/assets/projects/rasp_pi/car.gif" alt="Raspberry Pi car" />
+        <img src="/assets/projects/rasp_pi/test.gif" alt="Raspberry Pi testing" />
+      </div>
+      <a href="https://github.com/KyloRen1/RaspberryPi-car">View on GitHub →</a>
+    </li>
+
+    <li>
+      <h3>Surviv.io Game Bot</h3>
+      <p>Reinforcement learning agent for the online multiplayer battle royale game surviv.io.</p>
+      <img class="project-image" src="/assets/projects/surviv.gif" alt="Surviv.io RL agent" />
+      <a href="https://github.com/Laggg/ml-bots-surviv.io">View on GitHub →</a>
+    </li>
+
+    <li>
+      <h3>Quora Insincere Questions Classification</h3>
+      <p>Kaggle NLP competition solution achieving silver medal in top 2% of competitors.</p>
+      <a href="https://github.com/KyloRen1/Kaggle-Quora-Insincere-Questions-Classification">View on GitHub →</a>
+    </li>
+
+    <li>
+      <h3>Cross-lingual Multilingual BERT Analysis</h3>
+      <p>Research on M-BERT's transfer learning capabilities across languages, comparing English-to-Russian transfer with RuBERT.</p>
+      <a href="https://github.com/KyloRen1/CS224N-NLP-DeepPavlov">View on GitHub →</a>
+    </li>
+  </ul>
+
+  <div class="contact-section">
+    <p>Let's <a href="mailto:ivanyuk.bogdan1999@gmail.com">get in touch!</a></p>
+  </div>
+</div>
+
+<script src="{{ '/assets/scroll-nav.js' | relative_url }}"></script>
