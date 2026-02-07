@@ -1,6 +1,9 @@
 ---
 ---
 
+// Custom variables
+$content-width: 1100px;
+
 @import "minima";
 
 // Apple System Font Stack
@@ -335,7 +338,7 @@ body {
 
 // CV Page Styles
 .cv-container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -583,7 +586,7 @@ details[open] summary .see-more {
 
 // Reviews Page Styles
 .reviews-container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -690,7 +693,7 @@ details[open] summary .see-more {
 
 // Individual Review Post Styles
 .review-post {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -927,7 +930,7 @@ details[open] summary .see-more {
 // Apple-Inspired Publication Design - Optimized for Wide Images
 .publications-container {
   margin-top: 50px;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .pub-card {
