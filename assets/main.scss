@@ -163,8 +163,18 @@ body {
 }
 
 .site-nav {
-  float: left;
   line-height: 52px;
+
+  @media screen and (min-width: 601px) {
+    float: none !important;
+    width: 100%;
+    
+    .trigger {
+      display: flex !important;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
 
   .page-link {
     color: #1d1d1f;
@@ -196,6 +206,7 @@ body {
 .site-footer {
   padding: $spacing-unit/3 0;
   font-size: .8em;
+  text-align: center;
 
   ul {
     margin-left: 0;
@@ -205,7 +216,7 @@ body {
 
     li {
       display: inline;
-      margin-right: 20px;
+      margin: 0 10px;
     }
   }
 
