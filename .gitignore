@@ -23,3 +23,13 @@ build/
 # Scripts
 dev-server.sh
 git-update.sh
+
+# Generated site output (root-level build artifacts)
+/assets/
+/bonus_avatars/
+/cv/
+/reviews/
+/static/
+/theme/
+/_site/
+/*.html
