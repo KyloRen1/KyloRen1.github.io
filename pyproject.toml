@@ -1,0 +1,10 @@
+[project]
+name = "kylo-ren-site"
+version = "1.0.0"
+description = "Personal website built with Pelican"
+authors = [{name = "Bogdan Ivanyuk", email = "ivanyuk.bogdan1999@gmail.com"}]
+requires-python = ">=3.9"
+dependencies = [
+    "pelican[markdown]==4.9.1",
+    "python-dateutil>=2.8.2",
+]

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<canvas id="particle-canvas"></canvas>
+
+<div class="home">
+  {{ page.content }}
+</div>
+
+<script src="{{ SITEURL }}/assets/particle-network.js"></script>
+{% endblock %}

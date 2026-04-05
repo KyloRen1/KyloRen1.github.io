@@ -1,7 +1,25 @@
-_site
-.sass-cache
-Gemfile.lock
-*.gem
+# Build artifacts & static analysis
+.vscode/
+.idea/
 .DS_Store
-.jekyll-cache
+*~
+*.swp
+*.swo
+
+# Python
+.venv
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+*.log
+
+# Scripts
+dev-server.sh
 git-update.sh
