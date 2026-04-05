@@ -4,9 +4,29 @@
 
 import os
 import sys
+import shutil
 import subprocess
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
+
+
+def publish_assets(repo_root: Path) -> None:
+    """Publish static assets under /assets for templates that use /assets/* URLs."""
+    theme_root = repo_root / 'theme'
+    assets_src = theme_root / 'assets'
+    assets_dst = repo_root / 'assets'
+
+    assets_dst.mkdir(exist_ok=True)
+
+    # Copy directory-backed assets first (images, PDFs, project/review folders).
+    if assets_src.exists():
+        shutil.copytree(assets_src, assets_dst, dirs_exist_ok=True)
+
+    # Ensure root-level css/js files also exist at /assets/*. 
+    for filename in ('main.css', 'particle-network.js', 'scroll-nav.js'):
+        src_file = theme_root / filename
+        if src_file.exists():
+            shutil.copy2(src_file, assets_dst / filename)
 
 def build_site():
     """Build the Pelican site with custom index handling"""
@@ -29,6 +49,9 @@ def build_site():
     if result.returncode != 0:
         print("Pelican build failed!")
         return False
+
+    print("Publishing assets...")
+    publish_assets(repo_root)
     
     # Generate custom index.html
     print("Generating index.html...")
