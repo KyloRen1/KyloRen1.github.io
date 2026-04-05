@@ -42,7 +42,7 @@
     
     getRandomPastelColor() {
       const hue = Math.floor(Math.random() * 360);
-      return `hsl(${hue}, 70%, 80%)`;
+      return `hsl(${hue}, 72%, 64%)`;
     }
     
     update() {
@@ -142,7 +142,7 @@
         
         if (distance < 120) {
           // Check if mouse is near this connection
-          let lineColor = 'rgba(200, 200, 200, 0.3)';
+          let lineColor = 'rgba(132, 132, 132, 0.5)';
           
           if (mouse.x !== null && mouse.y !== null) {
             const midX = (particles[i].x + particles[j].x) / 2;
@@ -152,12 +152,12 @@
             );
             
             if (distToMouse < mouse.radius) {
-              lineColor = 'rgba(100, 100, 100, 0.5)';
+              lineColor = 'rgba(52, 52, 52, 0.72)';
             }
           }
           
           ctx.strokeStyle = lineColor;
-          ctx.lineWidth = 1;
+          ctx.lineWidth = 1.25;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
